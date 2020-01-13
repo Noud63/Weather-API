@@ -80,7 +80,7 @@ function deleteError() {
 class Weather {
     constructor(city, key){   
       this.city = city;
-      this.key = '31ba0dfb2a415daf8797fbb435b2f213'
+      this.key = '********************************'
 }
 
 async getData(){
