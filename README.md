@@ -1,4 +1,4 @@
-Openweathermap API app.<br>
+Openweathermap API app.( ES6 modules webpack and babel)<br>
 Weather conditions in your city. Showing Current weather, tomorrow forecast and the sunrise and sunset.<br>
 Default input parameter set to Amsterdam
 
