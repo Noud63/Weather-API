@@ -12,6 +12,8 @@ export const domStrings = {
         sunRise: document.getElementById('sunrise'),
         input: document.getElementById('input'),
         button: document.getElementById('btn'),
-        day : document.getElementById('date'),
-        day2 : document.getElementById('date2')
+        day: document.getElementById('date'),
+        day2: document.getElementById('date2'),
+        city: document.getElementById('city'),
+        city2: document.getElementById('city2')
 }

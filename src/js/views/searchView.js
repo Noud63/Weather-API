@@ -8,7 +8,6 @@ import {domStrings} from './domstrings';
      }
  }
  
- 
  // Delete error message 
  export function deleteError() {
    if( domStrings.errorMessage.textContent === 'Oooops something went wrong!'){
@@ -16,10 +15,21 @@ import {domStrings} from './domstrings';
    }
  }
 
- /*// Clear input field
+//Clear input field
 export function clearInput() {
     if( domStrings.input.value){
            domStrings.input.value = ""
     } 
  }
- */
+
+ // Add city name to UI
+ export function addName(name){
+  if(name){
+    domStrings.city.textContent = name
+  }else{
+    domStrings.city.textContent = 'Amsterdam'
+  }
+ 
+ }
+ 
+ 

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// Class constructor weather
+// Class constructor Weather
 export default class Weather {
     constructor(city){   
       this.city = city;
