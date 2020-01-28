@@ -20,6 +20,22 @@ html {
     flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 615px){
+    #container {
+    position: absolute;
+    width: 96%;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -48%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+  }
+
 #today {
     position: relative;
     background-image: url("../img/sky3.jpg"); /* Quotes or no quotes and two dots if html and css are in subdirectories */
@@ -33,6 +49,14 @@ html {
     align-items: center;
     flex-direction: column;
 }
+
+@media only screen and (max-width: 800px) {
+    #today {
+       width: 100%;
+       flex-direction: column;
+    }
+    
+  }
 
 #tomorrow {
     position: relative;
@@ -48,6 +72,22 @@ html {
     flex-direction: column;
 }
 
+@media only screen and (max-width: 800px) {
+    #tomorrow {
+        position: relative;
+        background-image: url("../img/sky4.jpg"); /* Quotes or no quotes and two dots if html and css are in subdirectories */
+        background-size: 100% 100%;
+        width: 100%;
+        height:550px;
+        background-color: rgb(82, 192, 255);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+  }
+
 #extra {
     position: relative;
     width: 33%;
@@ -61,6 +101,23 @@ html {
     flex-direction: column;
 }
 
+@media only screen and (max-width: 800px) {
+    #extra {
+        position: relative;
+        background-image: url("../img/sky3.jpg"); /* Quotes or no quotes and two dots if html and css are in subdirectories */
+        background-size: 100% 100%;
+        width: 100%;
+        height:550px;
+        background-color: rgb(82, 192, 255);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+  }
+
+
 .date1 {
     color: white;
     text-shadow: 2px 2px 2px #00123b;
@@ -73,7 +130,7 @@ html {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(255, 255, 255);
-    font-size: 12rem;
+    font-size: 10rem;
     text-shadow: 2px 2px 2px #00123b;
     padding-bottom: 20px;
     font-weight: bold;
@@ -84,7 +141,7 @@ html {
     #temp, #temp2 {
         font-family: Arial, Helvetica, sans-serif;
         color:rgb(255, 255, 255);
-        font-size: 5em;
+        font-size: 10rem;
         text-shadow: 2px 2px 2px #00123b;
         text-align: -webkit-center;
     }
@@ -110,7 +167,7 @@ h1 {
     h1 {
         font-family: Arial, Helvetica, sans-serif;
         color:rgb(250, 162, 0);
-        font-size: 3rem;
+        font-size: 4rem;
         text-shadow: 2px 2px 2px #00123b;
         text-align: center;
     }
@@ -137,12 +194,22 @@ h1 {
     color: white;
     text-shadow: 2px 2px 2px #00123b;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.5rem;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 1300px) {
+    #sunset, #sunrise  {
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgb(255, 255, 255);
+        font-size: 2rem;
+        text-shadow: 2px 2px 2px #00123b;
+        text-align: center;
+    }
+  }
 
 #inputContainer {
     position: relative;
