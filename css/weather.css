@@ -1,3 +1,7 @@
+html {
+    font-size: 62.5%;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -61,19 +65,19 @@
     color: white;
     text-shadow: 2px 2px 2px #00123b;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    text-align: center;
+    font-size: 2rem;
+    text-align: -webkit-center;
 }
 
 #temp, #temp2 {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(255, 255, 255);
-    font-size: 7em;
+    font-size: 12rem;
     text-shadow: 2px 2px 2px #00123b;
     padding-bottom: 20px;
     font-weight: bold;
-    text-align: center;
+    text-align: -webkit-center;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -82,14 +86,14 @@
         color:rgb(255, 255, 255);
         font-size: 5em;
         text-shadow: 2px 2px 2px #00123b;
-        text-align: center;
+        text-align: -webkit-center;
     }
   }
 
 #forecast, #forecast2 {
     font-family: 'Arial Narrow';
     color: white;
-    font-size: 1.5em;
+    font-size: 2.5rem;
     text-shadow: 2px 2px 2px #00123b;
     padding-bottom: 30px;
 }
@@ -97,26 +101,27 @@
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(250, 162, 0);
-    font-size: 2.5em;
+    font-size: 4rem;
     text-shadow: 2px 2px 2px #00123b;
-    text-align: center;
+    text-align: -webkit-center;
 }
 
 @media only screen and (max-width: 1300px) {
     h1 {
         font-family: Arial, Helvetica, sans-serif;
         color:rgb(250, 162, 0);
-        font-size: 2em;
+        font-size: 3rem;
         text-shadow: 2px 2px 2px #00123b;
         text-align: center;
     }
   }
 
-#error {
+#error2 {
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(202, 0, 0);
     font-size: 2em;
     text-shadow: 2px 2px 2px #00123b;
+    text-align: center;
 }
 
 .header {
@@ -143,13 +148,13 @@ h1 {
     position: relative;
     justify-content: flex-end;
     align-items: center;
-    width:500px;
+    width:450px;
     height: 80px;
     display: flex;
 }
 
 input[type=text] {
-    width: 500px;
+    width: 100%;
     height: 40px;
     border: 1px solid #122778 ;
     outline: none;
@@ -160,7 +165,7 @@ input[type=text] {
 } 
 
 input[type=text]::placeholder{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #8bb1ca;
     letter-spacing: 2px;
@@ -187,7 +192,7 @@ input[type=text]::placeholder{
 #city {
     font-family: Arial, Helvetica, sans-serif;
     color:white;
-    font-size: 2.5em;
+    font-size: 3rem;
     text-shadow: 2px 2px 4px #000000;
 }
 
