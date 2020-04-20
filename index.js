@@ -33,31 +33,33 @@ domStrings.button.addEventListener('click', function(e){
 const controlData = async (input = 'Amsterdam') => {
   
     try{
-      // Weather class instance
+      
       if(domStrings.input.value === ""){
         domStrings.city.textContent = 'Amsterdam'
+        domStrings.city2.textContent = 'Amsterdam'
       }
+      // Weather class instance
         Weather.newWeather = new Weather(input);
-        window.w = Weather.newWeather
+        console.log(Weather.newWeather)
         await Weather.newWeather.getData();
         
-      const temp =  Weather.newWeather.data.data.list[0].main.temp;
+      const temp =  Weather.newWeather.data.data.list[0].main.temp_max;
                             domStrings.temperature.textContent =  temp.toFixed(1) + ' \xB0' + "C ";
-      const temp2 =  Weather.newWeather.data.data.list[1].main.temp;
+      const temp2 =  Weather.newWeather.data.data.list[7].main.temp_max;
                             domStrings.temperature2.textContent =  temp2.toFixed(1) + ' \xB0' + "C ";
   
       const forecast =  Weather.newWeather.data.data.list[0].weather[0].description;
                             domStrings.foreCast.textContent = forecast.toLowerCase();
-      const forecast2 =  Weather.newWeather.data.data.list[1].weather[0].description;
+      const forecast2 =  Weather.newWeather.data.data.list[7].weather[0].description;
                             domStrings.foreCast2.textContent = forecast2.toLowerCase();
   
       const icon =  Weather.newWeather.data.data.list[0].weather[0].icon;
                             domStrings.weatherIcon.insertAdjacentHTML('afterbegin', `<img src="http://openweathermap.org/img/w/${icon}.png">`); 
-      const icon2 =  Weather.newWeather.data.data.list[1].weather[0].icon
+      const icon2 =  Weather.newWeather.data.data.list[7].weather[0].icon
                             domStrings.weatherIcon2.insertAdjacentHTML('afterbegin', `<img src="http://openweathermap.org/img/w/${icon2}.png">`);
   
-      let sRise = time.convertTime( Weather.newWeather.data.data.city.sunrise);
-      let sSet = time.convertTime( Weather.newWeather.data.data.city.sunset);
+      let sRise = time.convertTime(Weather.newWeather.data.data.city.sunrise);
+      let sSet = time.convertTime(Weather.newWeather.data.data.city.sunset);
                             domStrings.sunRise.textContent = `Sunrise today at ${sRise}`;
                             domStrings.sunSet.textContent = `Sunset today at ${sSet}`;
     
