@@ -26,8 +26,10 @@ export function clearInput() {
  export function addName(name){
   if(name){
     domStrings.city.textContent = name
+    domStrings.city2.textContent = name
   }else{
     domStrings.city.textContent = 'Amsterdam'
+    domStrings.city2.textContent = 'Amsterdam'
   }
  
  }
