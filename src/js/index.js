@@ -68,11 +68,7 @@ const controlData = async (input = 'Amsterdam') => {
       let sSet = time.convertTime(Weather.newWeather.data.data.city.sunset);
                             domStrings.sunRise.textContent = `Sunrise today at ${sRise}`;
                             domStrings.sunSet.textContent = `Sunset today at ${sSet}`;
-                            
-                            /*
-                            let setTime = utcTime(Weather.newWeather.data.data.city.timezone, Weather.newWeather.data.data.city.name)
-                            console.log(setTime)  
-                            */            
+                        
     
     }catch(error){
                             domStrings.errorMessage.textContent = 'Oooops something went wrong!';
