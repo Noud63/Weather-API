@@ -49,9 +49,9 @@ const controlData = async (input = 'Amsterdam') => {
 
       let list = Weather.newWeather.data.data.list
         
-      const temp = list[0].main.temp;      // temp_max optional
+      const temp = list[0].main.temp_max;      // temp_max optional
                             domStrings.temperature.textContent =  Math.round(temp) + ' \xB0' + "C ";
-      const temp2 = list[10].main.temp;     // temp_max optional
+      const temp2 = list[10].main.temp_max;     // temp_max optional
                             domStrings.temperature2.textContent =  Math.round(temp2) + ' \xB0' + "C ";
                 
       const forecast = list[0].weather[0].description;
