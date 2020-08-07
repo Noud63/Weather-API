@@ -49,19 +49,19 @@ const controlData = async (input = 'Amsterdam') => {
 
       let list = Weather.newWeather.data.data.list
         
-      const temp = list[0].main.temp_max;      // temp_max optional
+      const temp = list[0].main.temp;      // temp_max optional
                             domStrings.temperature.textContent =  Math.round(temp) + ' \xB0' + "C ";
-      const temp2 = list[10].main.temp_max;     // temp_max optional
+      const temp2 = list[8].main.temp;     // temp_max optional
                             domStrings.temperature2.textContent =  Math.round(temp2) + ' \xB0' + "C ";
                 
       const forecast = list[0].weather[0].description;
                             domStrings.foreCast.textContent = forecast.toLowerCase();
-      const forecast2 = list[10].weather[0].description;
+      const forecast2 = list[8].weather[0].description;
                             domStrings.foreCast2.textContent = forecast2.toLowerCase();
   
       const icon = list[0].weather[0].icon;
                             domStrings.weatherIcon.insertAdjacentHTML('afterbegin', `<img src="http://openweathermap.org/img/w/${icon}.png">`); 
-      const icon2 = list[10].weather[0].icon
+      const icon2 = list[8].weather[0].icon
                             domStrings.weatherIcon2.insertAdjacentHTML('afterbegin', `<img src="http://openweathermap.org/img/w/${icon2}.png">`);
   
       let sRise = time.convertTime(Weather.newWeather.data.data.city.sunrise);
