@@ -30,8 +30,10 @@ domStrings.button.addEventListener('click', function(e){
     searchView.clearInput();
     }
  });
+
 let loc;
 let coord;
+
  // Control and process data
 const controlData = async (input = 'Amsterdam') => {
     try{
@@ -66,8 +68,8 @@ const controlData = async (input = 'Amsterdam') => {
   
       let sRise = time.convertTime(Weather.newWeather.data.data.city.sunrise);
       let sSet = time.convertTime(Weather.newWeather.data.data.city.sunset);
-                            domStrings.sunRise.textContent = `Sunrise today at ${sRise}`;
-                            domStrings.sunSet.textContent = `Sunset today at ${sSet}`;
+                            domStrings.sunRise.textContent = `Sunrise today at ${sRise}(CEST)`;
+                            domStrings.sunSet.textContent = `Sunset today at ${sSet}(CEST)`;
                         
     
     }catch(error){
