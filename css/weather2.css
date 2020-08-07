@@ -92,10 +92,36 @@ html {
     }
   }
 
+  #sun {
+      width: 170px;
+      height: 170px;
+  }
+
+  #moon {
+    width: 100px;
+    height: 100px;
+    
+  }
+
+  .sunmoon {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 340px;
+      padding-right: 30px;
+  }
+
+
+  @media only screen and (max-width: 1170px) {
+    .sunmoon {
+        width: 300px;
+    }
+  }  
 
 .date1 {
     color: white;
-    text-shadow: 2px 2px 2px #00123b;
+    text-shadow: 2px 2px 2px #000000;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     text-align: -webkit-center;
@@ -274,6 +300,7 @@ input[type=text]::placeholder {
     text-align: center;
 }
 
+/*
 #moon {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -290,3 +317,4 @@ input[type=text]::placeholder {
       padding-bottom: 0px;
       }
     }
+    */
