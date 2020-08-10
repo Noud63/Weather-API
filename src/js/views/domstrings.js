@@ -5,7 +5,7 @@ export const domStrings = {
         temperature2: document.getElementById('temp2'),
         foreCast: document.getElementById('forecast'),
         foreCast2: document.getElementById('forecast2'),
-        errorMessage: document.getElementById('error'),
+        errorMessage: document.getElementById('error2'),
         weatherIcon: document.getElementById('icon'),
         weatherIcon2: document.getElementById('icon2'),
         sunSet: document.getElementById('sunset'),

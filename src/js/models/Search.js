@@ -8,11 +8,9 @@ export default class Weather {
 }
 
 async getData(){
-         const url = `http://api.openweathermap.org/data/2.5/forecast?q=${this.city}&units=metric&appid=${this.key}`;
+         const url = `https://api.openweathermap.org/data/2.5/forecast?q=${this.city}&units=metric&appid=${this.key}`;
          const data = await axios(url)
-         console.log(data)
          this.data = data
       }
+
 }
-
-
