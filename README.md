@@ -1,4 +1,4 @@
-<b>Openweathermap API app.( ES6 modules webpack and babel)</b><br>
+<b>Openweathermap API app.( ES6 modules webpack and babel)</b><br><p>
 With Search bar to search for weather conditions world wide. Showing Current weather, tomorrows forecast and the sunrise and sunset (CEST).<br>
 Default input parameter set to Amsterdam
 
